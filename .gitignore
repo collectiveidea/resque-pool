@@ -5,3 +5,5 @@ pkg/*
 *.pid
 tmp/*
 Gemfile.lock
+.*.swp
+.DS_Store
