@@ -7,7 +7,7 @@ def process_should_not_exist(pid)
 end
 
 def grab_worker_pids(count, str)
-  announce "TODO: check output_or_log for #{count} worker started messages"
+  puts "TODO: check output_or_log for #{count} worker started messages"
   pid_regex = (1..count).map { '(\d+)' }.join ', '
   full_regex = /resque-pool-manager\[\d+\]: Pool contains worker PIDs: \[#{pid_regex}\]/m
   str.should =~ full_regex
